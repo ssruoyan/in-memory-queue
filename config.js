@@ -1,9 +1,14 @@
 'use strict';
 
 class QueueConfig {
-    constructor(size, maxRetry) {
+    constructor(size, maxRetry, logLevel) {
         this._size = size;
         this._maxRetry = maxRetry;
+        this._logLevel = logLevel || 1;
+    }
+
+    getLogLevel() {
+        return this._logLevel;
     }
 
     getSize() {

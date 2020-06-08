@@ -1,10 +1,11 @@
 'use strict';
 
 const Winston = require('winston');
+const QueueConfiguration = require('../config').getQueueConfiguration();
 
 const Logger = scope => {
     return new Winston.Logger({
-        level: 'info',
+        level: QueueConfiguration.getLogLevel(),
         transports: [
             new (Winston.transports.Console)({
                 timestamp: true,

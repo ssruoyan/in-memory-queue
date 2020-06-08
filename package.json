@@ -1,7 +1,7 @@
 {
-  "name": "in-memory-queue",
-  "version": "1.0.3",
-  "description": "Simple in-memory job queue",
+  "name": "memo-queue",
+  "version": "1.0.0",
+  "description": "Simple in-memory job queue(Fork from https://github.com/void666/in-memory-queue)",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/gulp/bin/gulp.js test",
