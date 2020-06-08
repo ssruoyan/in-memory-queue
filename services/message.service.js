@@ -2,9 +2,9 @@
 const Message = require('../models/message');
 const topicService = require('./topic.service');
 const queueService = require('./queue.service');
-const utils = require('../utilities/util');
+const utils = require('../utils/util');
 const Promise = require('bluebird');
-const logger = require('../utilities/logger')('message.service');
+const logger = require('../utils/logger')('message.service');
 
 const validateMessageComponent = function (topic, json) {
     if (!topicService.isValidTopic(topic)) {

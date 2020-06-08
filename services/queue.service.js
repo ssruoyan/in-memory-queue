@@ -1,9 +1,9 @@
 'use strict';
-const utils = require('../utilities/util');
+const utils = require('../utils/util');
 const Queue = require('../models/queue');
 const async = require('async');
 const handlerService = require('./message.handler.service');
-const logger = require('../utilities/logger')('queue.service');
+const logger = require('../utils/logger')('queue.service');
 let QueueInstance = null;
 let pollingLock = false;
 

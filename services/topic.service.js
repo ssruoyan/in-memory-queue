@@ -1,6 +1,6 @@
 'use strict';
 const _ = require('lodash');
-const logger = require('../utilities/logger')('topic.service');
+const logger = require('../utils/logger')('topic.service');
 const topicVsConsumer = {};
 
 const isValidTopic = function (topic) {

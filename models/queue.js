@@ -1,6 +1,6 @@
 'use strict';
 const _ = require('lodash');
-const logger = require('../utilities/logger')('queue');
+const logger = require('../utils/logger')('queue');
 
 class Queue {
     constructor(size, retries) {

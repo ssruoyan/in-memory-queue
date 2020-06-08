@@ -1,8 +1,8 @@
 'use strict';
-const util = require('../utilities/util');
+const util = require('../utils/util');
 const topicService = require('./topic.service');
 const Consumer = require('../models/consumer');
-const logger = require('../utilities/logger')('consumer.service');
+const logger = require('../utils/logger')('consumer.service');
 
 const validateConsumer = function (topic, priority, handler) {
     if (!topicService.isValidTopic(topic)) {
