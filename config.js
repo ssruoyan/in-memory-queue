@@ -20,10 +20,10 @@ class QueueConfig {
     }
 }
 
-let QueueConfigInstance = null;
+let QueueConfigInstance = new QueueConfig(100, 2, 1);
 
-const setQueueConfiguration = function (size, maxRetry) {
-    QueueConfigInstance = new QueueConfig(size, maxRetry);
+const setQueueConfiguration = function (size, maxRetry, logLevel) {
+    QueueConfigInstance = new QueueConfig(size, maxRetry, logLevel);
 };
 
 const getQueueConfiguration = function () {

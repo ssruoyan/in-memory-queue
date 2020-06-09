@@ -1,6 +1,6 @@
 {
   "name": "memo-queue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple in-memory job queue(Fork from https://github.com/void666/in-memory-queue)",
   "main": "index.js",
   "scripts": {
