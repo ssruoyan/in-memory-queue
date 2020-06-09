@@ -1,6 +1,6 @@
 {
   "name": "memo-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple in-memory job queue(Fork from https://github.com/void666/in-memory-queue)",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/void666/in-memory-queue.git"
+    "url": "git+https://github.com/ssruoyan/in-memory-queue.git"
   },
   "author": "Sushim Mukul Dutta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/void666/in-memory-queue/issues"
+    "url": "https://github.com/ssruoyan/in-memory-queue/issues"
   },
-  "homepage": "https://github.com/void666/in-memory-queue#readme",
+  "homepage": "https://github.com/ssruoyan/in-memory-queue#readme",
   "dependencies": {
     "async": "^2.6.0",
     "bluebird": "^3.5.1",

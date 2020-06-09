@@ -19,7 +19,7 @@
 Returns promise.
 
 ```
-const imqueue = require('in-memory-queue');
+const imqueue = require('memo-queue');
 imqueue.setQueueConfiguration(100, 2); 
 
  ```
@@ -28,7 +28,7 @@ imqueue.setQueueConfiguration(100, 2);
 `createTopic` : Creates a topic (string based pattern). Takes one parameter as string. Returns promise.
 
 ```
-const imqueue = require('in-memory-queue');
+const imqueue = require('memo-queue');
 const Promise = require('bluebird');
 const topic = 'topic1';
 imqueue.setQueueConfiguration(100, 2);
@@ -43,7 +43,7 @@ return imqueue.createTopic(topic).then((result)=>{
 
 `createMessage` :Creates a Message, takes two parameters, topic and stringified JSON. Returns promise.
 ```
-const imqueue = require('in-memory-queue');
+const imqueue = require('memo-queue');
 const Promise = require('bluebird');
 const topic = 'topic1';
 const jsonString = {code: 'json1'};
@@ -66,7 +66,7 @@ return imqueue.createTopic(topic).then((result) => {
 
 `createConsumer` : Creates a Consumer for a given topic. Accepts valid `topic`, `priority`(positive integer), `handler` (promisified function , with a message parameter);
 ```
-const imqueue = require('in-memory-queue');
+const imqueue = require('memo-queue');
 const Promise = require('bluebird');
 imqueue.createConsumer('topic1', 1, function (msg) {
     console.log(`Handler task executing ${msg.getValue()}`);
@@ -102,7 +102,7 @@ imqueue.createConsumer('topic1', 2, function (msg) {
 
 `getProcessedMessages` : Returns list of all messages processed so far. Returns promise.
 ```
-const imqueue = require('in-memory-queue');
+const imqueue = require('memo-queue');
 const Promise = require('bluebird');
 const topic = 'topic1';
 const jsonString = {code: 'json1'};
@@ -131,7 +131,7 @@ return imqueue.createTopic(topic).then((result) => {
 
 `getStatus` : gets the status of the present queue. Returns promise and prints the status in queue log
 ```
-const imqueue = require('in-memory-queue');
+const imqueue = require('memo-queue');
 imqueue.setQueueConfiguration(100, 2);
 return imqueue.getStatus()
     .then((result)=> {
@@ -143,14 +143,14 @@ return imqueue.getStatus()
 ### Installation : 
 
 - Method 1 (Update):
-    - do `npm install in-memory-queue`    
+    - do `npm install memo-queue`    
 
 
 - Method 2 (Direct clone): 
-    - add a referrence to `in-memory-queue` as follows in `package.json`:
+    - add a referrence to `memo-queue` as follows in `package.json`:
     ```
     "dependencies": {
-    "in-memory-queue": "git+https://github.com/void666/in-memory-queue.git"}
+    "in-memory-queue": "git+https://github.com/ssruoyan/in-memory-queue.git"}
     ```
     - do  `npm install`
 - 
