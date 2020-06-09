@@ -1,4 +1,4 @@
-# in-memory-queue 
+# memo-queue 
 [![npm version](https://badge.fury.io/js/in-memory-queue.svg)](https://badge.fury.io/js/in-memory-queue)
 [![npm downloads](https://img.shields.io/npm/dt/in-memory-queue.svg)](https://img.shields.io/npm/dt/in-memory-queue.svg)
 [![coverage status](https://coveralls.io/repos/github/void666/in-memory-queue/badge.svg?branch=master)](https://coveralls.io/github/void666/in-memory-queue?branch=master)
